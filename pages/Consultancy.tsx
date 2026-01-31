@@ -121,11 +121,11 @@ const Consultancy = () => {
         }
 
         body {
-          font-family: 'Work Sans', sans-serif;
+          font-family:  sans-serif;
         }
 
         .font-display {
-          font-family: 'Syne', sans-serif;
+          font-family:  sans-serif;
         }
 
         @keyframes slideDown {
@@ -299,7 +299,8 @@ const Consultancy = () => {
                 HOME <span className="text-amber-500 mx-2">▸</span> Consultancy Services
               </div>
 
-              <h1 className="font-display text-5xl lg:text-6xl xl:text-3xl font-bold text-white leading-tight animate-slide-up">
+              <h1 className="font-display text-5xl lg:text-6xl xl:text-3xl font-
+              bold text-white leading-tight animate-slide-up">
                 Consultancy Services
               </h1>
 

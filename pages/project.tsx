@@ -121,11 +121,11 @@ const ProjectManagement = () => {
         }
 
         body {
-          font-family: 'Work Sans', sans-serif;
+          font-family: sans-serif;
         }
 
         .font-display {
-          font-family: 'Syne', sans-serif;
+          font-family:  sans-serif;
         }
 
         @keyframes slideDown {
