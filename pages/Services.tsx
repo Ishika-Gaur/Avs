@@ -1,4 +1,6 @@
+
 import React from 'react';
+import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
 import ServiceCard from '../components/ServiceCard';
 import { SERVICES } from '../constants';
@@ -6,93 +8,13 @@ import { SERVICES } from '../constants';
 const Services: React.FC = () => {
   return (
     <div>
-      {/* About AVS Enterprise Hero Section - Improved */}
-      <section className="relative min-h-[650px] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center scale-105"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop')"
-          }}
-        />
-        
-        {/* Enhanced Dark Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-800/85 to-slate-900/90" />
-        
-        {/* Content */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-10 shadow-lg">
-            <span className="w-2.5 h-2.5 bg-blue-400 rounded-full animate-pulse" />
-            <span className="text-white/95 text-sm font-semibold tracking-wider uppercase">
-              Established Excellence Since 2009
-            </span>
-          </div>
-          
-          {/* Main Title */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-            <span className="text-white block mb-2">About</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500">
-              AVS Enterprise
-            </span>
-          </h1>
-          
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-200 mb-20 max-w-4xl mx-auto leading-relaxed font-light">
-            A legacy of commitment, a future of excellence in business support services.
-          </p>
-          
-          {/* Stats - Improved Design */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
-            {/* Stat 1 */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
-              <div className="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-10 hover:bg-white/10 hover:border-blue-400/40 transition-all duration-300 shadow-xl">
-                <div className="text-6xl md:text-7xl font-black mb-4">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-cyan-400">
-                    15+
-                  </span>
-                </div>
-                <div className="text-lg text-gray-200 font-medium tracking-wide">
-                  Years Experience
-                </div>
-              </div>
-            </div>
+      <Hero 
+        title="Our Specialized Services" 
+        subtitle="End-to-end business support solutions tailored for your industry."
+        backgroundImage="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2000&auto=format&fit=crop"
+        showButtons={false}
+      />
 
-            {/* Stat 2 */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
-              <div className="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-10 hover:bg-white/10 hover:border-blue-400/40 transition-all duration-300 shadow-xl">
-                <div className="text-6xl md:text-7xl font-black mb-4">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-cyan-400">
-                    500+
-                  </span>
-                </div>
-                <div className="text-lg text-gray-200 font-medium tracking-wide">
-                  Happy Clients
-                </div>
-              </div>
-            </div>
-
-            {/* Stat 3 */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
-              <div className="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-10 hover:bg-white/10 hover:border-blue-400/40 transition-all duration-300 shadow-xl">
-                <div className="text-6xl md:text-7xl font-black mb-4">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-cyan-400">
-                    5000+
-                  </span>
-                </div>
-                <div className="text-lg text-gray-200 font-medium tracking-wide">
-                  Staff Deployed
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle 
@@ -132,6 +54,22 @@ const Services: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Call to Action */}
+      {/* <section className="py-20 bg-brand relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
+          <div className="w-[800px] h-[800px] border-[50px] border-white rounded-full"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="text-white max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Looking for a customized service package?</h2>
+            <p className="text-corporate-200 text-lg">Contact our consultants today to design a business support plan that fits your requirements perfectly.</p>
+          </div>
+          <button className="bg-white text-brand px-10 py-4 rounded-full font-bold text-lg hover:bg-corporate-50 transition-colors shadow-2xl">
+            Get a Free Quote
+          </button>
+        </div>
+      </section> */}
     </div>
   );
 };
